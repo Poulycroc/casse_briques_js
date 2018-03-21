@@ -1,0 +1,95 @@
+* { 
+			padding:0;	margin:0;	border:none; outline: none;
+	-webkit-box-sizing:border-box; -o-box-sizing:border-box;
+	   -moz-box-sizing:border-box;	  box-sizing:border-box;
+			
+	-webkit-font-smoothing: antialiased; -ms-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;  -o-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+	}
+body { top: 0 !important; } button { cursor: pointer !important; }
+a, li, ul, nav, p, h1, h2 {
+	text-decoration: none;	text-transform: none;
+	font-style: none;	font-variant: none;
+	list-style: none;
+}
+a, p, h1, h2, h3, cite, em, b { 
+	font-family: helvetica, arial, sans-serif;
+	font-variant: none;		text-decoration: none; 
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0; padding: 0; border: 0;
+	font-size: 100%; font: inherit;
+	vertical-align: baseline;
+	}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+ol, ul { list-style: none;
+	}
+blockquote, q { quotes: none;
+	}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ''; content: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+body, html { height: 100%; }
+body { 
+	position: relative; font-family: 'arial', 'sans-serif'; line-height: 40px;
+	}
+
+.hide { display: none !important; opacity: 0 !important; visibility: hidden !important; }
+
+.content {
+	width: 610px; height: 300px; position: absolute; background: transparent;
+	top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: #fff;
+	}
+	.content_canvas {
+		width: 410px; height: 300px;
+		background: #fff; position: absolute; 
+		top: 0; left: 0; border: 10px solid #f1f3f9;
+		border-left: none; border-top: none; border-bottom: none;
+		}
+		canvas, .lose_box { /* placement du canvas */
+			position: absolute; background: #fff;
+			top: 0; left: 0; z-index: 200;
+			}
+		.lose_box { width: 100%; height: 100%;
+			}
+			.lose_box h1,
+			.lose_box h2,
+			.lose_box  p,
+			button.reload { width: 100%; display: block; text-align: center;
+				}
+				.lose_box h1  { font-size: 20pt; padding-top: 80px; margin-bottom: 20px; }
+				.lose_box h2  { font-size: 10pt; text-transform: none; }
+				button.reload { font-size: 12pt; background: #f1f3f9; margin-top: 40px; }
+				.lose_box  p  { font-size: 10pt; margin-top: 12px; }
+	.score_tab { /* placement u */
+		background: #fff; width: 200px; height: 300px;
+		position: absolute; top: 0; right: 0;
+		padding: 8pt;
+		}
+		.score_tab p.warp { display: block; width: 100%; 
+			}
+		.score_tab h1 { text-align: center; display: block; width: 100%; line-height: 30px; font-size: 12pt;
+			}
+		.score_tab h2 { font-size: 10pt; text-transform: none;
+			}

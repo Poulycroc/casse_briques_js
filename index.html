@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <title>Casse Briques</title>
+
+        <script src='js/jquery-3.2.0.min.js'></script>
+    </head>
+    <body>
+    
+    </body>
+    
+        <div class="content">
+            <div class="content_canvas">
+                <canvas id="canvasElem" width="400" height="300">
+                    votre navigateur ne supporte pas HTML Canvas
+                </canvas>
+                <div class="lose_box hide">
+                    <h1 id='game_over'>Game over !</h1>
+                    <h2><span id="final_points">0</span> Points !</h2>
+                    <h2><span id="final_timer">0</span> Secondes</h2>
+                    <button class='reload'>I want more !</button>
+                    <p>Press space.</p>
+                </div><!-- lose_box -->
+            </div><!-- end .content_canvas -->
+            <div class="score_tab">
+                <h1>Score</h1>
+                <h2>Points : <span id="points_dejeu">0</span></h2>
+                <h2>Chrono : <span id="timer">00 : 00</span></h2>
+            </div><!-- end .score_tab -->
+        </div><!-- end .content -->
+
+
+    <script src='js/velocity.js'></script>
+    <script src='js/app.js'></script>
+</html>
